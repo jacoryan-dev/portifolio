@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid white;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+.foto {
+  height: 200px; /* Altura desejada */
+  width: 200px; /* Largura ajustada automaticamente */
+  border-radius: 50%;
+}
+
+.information {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+
+.information p {
+  margin: 0.5rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}

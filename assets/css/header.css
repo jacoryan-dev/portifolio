@@ -1,18 +1,7 @@
-header {
+ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.main {
-  margin: 1rem;
-  padding: 1rem;
-  border: 1px solid white;
-}
-
-body {
-  background-color: black;
-  color: white;
 }
 
 .foto {
@@ -26,18 +15,54 @@ body {
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
+  background: none;
 }
 
 .information p {
   margin: 0.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
-* {
-  box-sizing: border-box;
+.information p::before {
+  content: " ";
+  display: inline-block;
+  width: 20px;
+  height: 5px;
+  margin-right: 1rem;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
-* {
-  font-family: "Open Sans", sans-serif;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
+.information .job {
+  display: inline-block;
+  background-image: url("/assets/imagens/incons/job.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.information .location {
+  display: inline-block;
+  background-image: url("/assets/imagens/incons/location.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.information .phone {
+  display: inline-block;
+  background-image: url("/assets/imagens/incons/phone.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.information .email {
+  display: inline-block;
+  background-image: url("/assets/imagens/incons/email.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+header h1 {
+  background: none;
 }

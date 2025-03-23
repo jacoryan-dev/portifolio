@@ -1,0 +1,47 @@
+.main {
+  margin: 1rem;
+  padding: 1rem;
+  border: 1px solid white;
+}
+.main::before {
+  content: "";
+  background-image: url("/assets/imagens/background-top.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1000px;
+  height: 400px;
+  display: inline-block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.main::after {
+  content: "";
+  background-image: url("/assets/imagens/background-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 1000px;
+  height: 900px;
+  display: inline-block;
+  position: fixed;
+  bottom: -8rem;
+  right: 0;
+  z-index: -1;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+* {
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+
+* {
+  box-sizing: border-box;
+}
